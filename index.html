@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1 id="title">Collage Web App</h1>
+            <h2 id="note">When you see a small popup in the left corner of your screen, please press allow.</h2>
+            <h1>Say "Selfie!" to take your photos and create a collage.</h1>
+            <label>Your voice output : </label>
+            <br>
+            <textarea readonly="true" id="voiceoutput"></textarea>
+            <br>
+            <br>
+            <button onclick="start()" id="startbutton">Start</button>
+            <br>
+            <h3>Your webcam:</h3>
+            <div id="camera">
+
+            </div>
+            <br>
+            <h3>Your selfies will be displayed here:</h3>
+            <div id="result">
+                <div id="result1">
+                    <img id="pic1" src="pic1.jpg" width="30%" height="60%">
+                </div>
+                <div id="result2">
+                    <img id="pic2" src="pic2.jpg" width="30%" height="60%">
+                </div>
+                <div id="result3">
+                    <img id="pic3" src="pic3.jpg" width="30%" height="60%">
+                </div>
+            </div>
+            <script src="main.js"></script>
+        </center>
+    </body>
+</html>
